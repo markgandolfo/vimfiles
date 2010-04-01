@@ -1,0 +1,6 @@
+.DS_Store
+.dropbox
+.NERDTreeBookmarks
+*.tmp
+*.swp
+backup/*
