@@ -6,10 +6,10 @@ filetype plugin indent on                  " enable automatic filetype detection
 " GUI
 "-------------------------------------------------
 if has("gui_running")
-  colorscheme darkspectrum
+  colorscheme zenburn
   "set cursorline                          " highlight current line - DISABLED FOR SPEED
   set guioptions-=T                        " hide tool bar
-  set guifont=Bitstream\ Vera\ Sans\ Mono\:h13
+  set guifont=Inconsolata:h13
   set guicursor=a:blinkon0
 end
 
