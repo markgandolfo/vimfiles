@@ -59,7 +59,8 @@ augroup myfiletypes
   " clear old autocmds in group
   autocmd!
   " autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,haml,eruby,yaml,ru set ai sw=2 sts=2 et
+  "autocmd FileType ruby,haml,eruby,yaml,ru set ai sw=2 sts=2 et
+  autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber set ai sw=2 sts=2 et
   "autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
   "autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
   "autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
