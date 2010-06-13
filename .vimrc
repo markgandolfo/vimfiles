@@ -6,7 +6,7 @@ filetype plugin indent on                  " enable automatic filetype detection
 " GUI
 "-------------------------------------------------
 if has("gui_running")
-  colorscheme zenburn
+  colorscheme rdark
   "set cursorline                          " highlight current line - DISABLED FOR SPEED
   set guioptions-=T                        " hide tool bar
   set guifont=Inconsolata:h13
@@ -86,8 +86,8 @@ let g:CommandTMaxHeight = 30
 " CUSTOM KEY MAPPINGS
 "-------------------------------------------------
 
-" make <c-l> clear the highlight as well as redraw
-nnoremap <C-L> :nohls<CR><C-L>
+" make nh clear the highlight as well as redraw
+nnoremap <Leader>nh :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
 " re-run the last command
@@ -98,7 +98,8 @@ map <C-Tab> :tabnext<CR>
 map <C-S-Tab> :tabprev<CR>
 
 " show nerdtree with line numbers for easier navigation
-map <Leader>n :NERDTreeToggle<CR> :set number<CR>
+map <Leader>d :NERDTreeToggle<CR> :set number<CR>
+map <C-d> :NERDTreeToggle<CR> :set number<CR>
 
 " command-t (fuzzyfinder replacement)
 "nmap <silent> <Leader>t :CommandT<CR>
@@ -108,7 +109,7 @@ map <Leader>, <C-^>
 map <Leader>] :bnext<CR>
 map <Leader>[ :bprev<CR>
 map <Leader>ls :buffers<CR>
-
+map <Leader>bd :bd<CR>
 " quickly open/source .vimrc/.gvimrc
 nmap .s :source $HOME/.vimrc<cr>
 nmap .g :source $HOME/.gvimrc<cr>
@@ -126,6 +127,13 @@ nmap <Leader>b :call BlockBracesToDoEnd()<CR>
 
 " alternative key for esc
 imap jj <Esc>
+
+" Quick Switching of Splits
+map <C-l> <C-W>l
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <Leader>q <C-W><C-Q>
 
 " toggle show invisibles
 :noremap ,i :set list!<CR>

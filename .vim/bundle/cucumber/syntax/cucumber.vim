@@ -95,6 +95,7 @@ syn region  cucumberString   start=+\%(^\s*\)\@<="""+ end=+"""+
 call s:Add('Then')
 call s:Add('When')
 call s:Add('Given')
+call s:Add('And')
 
 hi def link cucumberUnparsedComment   cucumberComment
 hi def link cucumberComment           Comment
